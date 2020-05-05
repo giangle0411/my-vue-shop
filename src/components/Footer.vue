@@ -42,6 +42,6 @@ export default {}
 
 <style lang="scss" scoped>
 .footer {
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 </style>
