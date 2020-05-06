@@ -1,25 +1,25 @@
 <template>
   <div>
-    <h1>This is the laptop page</h1>
-
-    <b-card no-block>
-      <b-tabs>
-        <b-tab title="Tab 1">
-          Tab 1 Contents
-        </b-tab>
-        <b-tab title="Tab 2">
-          Tab 2 Contents <b-button size="md">Boop</b-button>
-        </b-tab>
-        <b-tab title="Tab 3" disabled>
-          Tab 3 Contents
-        </b-tab>
-      </b-tabs>
-    </b-card>
+    <Hero
+      title="Laptops for your work and entertainment purposes"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. "
+      imageName="homeLaptop.jpg"
+    />
   </div>
 </template>
 
 <script>
-export default {}
+import Hero from '@/components/Hero.vue'
+export default {
+  components: {
+    Hero
+  }
+}
 </script>
 
 <style lang="scss" scoped></style>

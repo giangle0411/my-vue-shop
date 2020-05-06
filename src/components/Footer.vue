@@ -1,13 +1,23 @@
 <template>
   <div>
-    <b-container class="footer">
+    <b-container class="footer position-relative fixed-bottom ">
       <div class="row">
         <div class="col-4 col-md">
           <h5>Shop</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Mobile Phones</a></li>
-            <li><a class="text-muted" href="#">Laptop</a></li>
-            <li><a class="text-muted" href="#">Accessories</a></li>
+            <li>
+              <router-link class="text-muted" to="mobile-phones"
+                >Mobile Phones</router-link
+              >
+            </li>
+            <li>
+              <router-link class="text-muted" to="laptops">Laptops</router-link>
+            </li>
+            <li>
+              <router-link class="text-muted" to="accessories"
+                >Accessories</router-link
+              >
+            </li>
           </ul>
         </div>
 
