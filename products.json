@@ -1,0 +1,78 @@
+{
+  "phones": [
+    {
+      "id": 1,
+      "name": "Apple iPhone 11 Pro 256GB",
+      "description": "Latest iPhone model, with 256GB storage capacity.",
+      "price": 1999,
+      "inStock": 50,
+      "imageName": "1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Apple iPhone 11 Pro Max 256GB",
+      "description": "Latest iPhone model, but with bigger screen, 256GB storage capacity.",
+      "price": 2149,
+      "inStock": 50,
+      "imageName": "1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Apple iPhone SE 128GB",
+      "description": "Not only small, but powerful, and affordable!",
+      "price": 829,
+      "inStock": 100,
+      "imageName": "3.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Samsung Galaxy S20+ 5G 128GB",
+      "description": "2020's Samsung Galaxy S20+ with incredible camera.",
+      "price": 1649,
+      "inStock": 50,
+      "imageName": "4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Samsung Galaxy Note10+ 256GB",
+      "description": "The Galaxy Note10+ comes with s-pen, which is fun to play with.",
+      "price": 1699,
+      "inStock": 25,
+      "imageName": "5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Google Pixel 4 XL 128GB",
+      "description": "A Google phone! Interesting.",
+      "price": 1149,
+      "inStock": 40,
+      "imageName": "6.jpg"
+    }
+  ],
+  "laptops": [
+    {
+      "id": 10,
+      "name": "Apple MacBook Pro 16-inch 512GB (Silver)",
+      "description": "Powerful and not for everyone. Gamers are restricted :).",
+      "price": 3799,
+      "inStock": 20,
+      "imageName": "10.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Dell Inspiron 14 5000 14-inch",
+      "description": "2-in-1 Touchscreen Laptop (10th Gen i5), TWO IN ONE? NICE!",
+      "price": 1399,
+      "inStock": 20,
+      "imageName": "11.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Microsoft Surface Book 2 13.5-inch",
+      "description": "256GB SSD and 8th Gen i7, it's just outstanding.",
+      "price": 2398,
+      "inStock": 40,
+      "imageName": "12.jpg"
+    }
+  ]
+}

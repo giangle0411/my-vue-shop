@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <Hero
       title="Laptops for your work and entertainment purposes"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -10,16 +10,35 @@
                 nulla pariatur. "
       imageName="homeLaptop.jpg"
     />
+    <div class="row">
+      <Products
+        v-for="product in laptops"
+        :key="product.id"
+        :product="product"
+        class="col-md-4 d-flex align-items-stretch"
+      />
+    </div>
   </div>
 </template>
 
 <script>
 import Hero from '@/components/Hero.vue'
+import Products from '@/components/Products.vue'
+import axios from 'axios'
 export default {
   components: {
-    Hero
+    Hero,
+    Products
+  },
+  data() {
+    return {
+      laptops: []
+    }
+  },
+  created() {
+    axios.get('http://localhost:3000/laptops').then(response => {
+      this.laptops = response.data
+    })
   }
 }
 </script>
-
-<style lang="scss" scoped></style>
