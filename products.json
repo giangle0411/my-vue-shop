@@ -74,5 +74,39 @@
       "inStock": 40,
       "imageName": "12.jpg"
     }
+  ],
+  "Accessories": [
+    {
+      "id": 30,
+      "name": "Samsung T5 500GB External SSD",
+      "description": "Portable SSD with USB Type-C connector.",
+      "price": 179,
+      "inStock": 50,
+      "imageName": "30.jpg"
+    },
+    {
+      "id": 31,
+      "name": "Sony WF-1000XM3 Noise Cancelling Earphones",
+      "description": "True true wireless Bluetooth headphones.",
+      "price": 349,
+      "inStock": 30,
+      "imageName": "31.jpg"
+    },
+    {
+      "id": 32,
+      "name": "Apple AirPods Pro",
+      "description": "Compatible to every device, ESPECIALLY APPLES.",
+      "price": 399,
+      "inStock": 50,
+      "imageName": "32.jpeg"
+    },
+    {
+      "id": 33,
+      "name": "Belkin Wireless Charging Dock",
+      "description": "Say goodbye to tangling phone chargers!",
+      "price": 79,
+      "inStock": 100,
+      "imageName": "33.jpeg"
+    }
   ]
 }

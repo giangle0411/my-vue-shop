@@ -1,19 +1,23 @@
 <template>
   <div>
-    <b-card class="product">
+    <b-card class="products" footer-tag="footer" header-tag="header">
+      <header class="header-solid">
+        <h5 class="card-title">{{ product.name }}</h5>
+      </header>
       <img
         :src="require(`../../public/img/products/${product.imageName}`)"
         class="card-img-top"
         alt="..."
       />
       <div class="card-body">
-        <h5 class="card-title">{{ product.name }}</h5>
         <p class="card-text">
           {{ product.description }}
         </p>
-        <h3>Price: ${{ product.price }}</h3>
-        <a href="#" class="btn btn-primary">Add to Cart</a>
       </div>
+      <template v-slot:footer>
+        <h4>Price: ${{ product.price }}</h4>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+      </template>
     </b-card>
   </div>
 </template>
@@ -29,7 +33,8 @@ export default {
 <style lang="scss" scoped>
 .products {
   margin-top: 3rem;
-  background: #f2f2f2;
-  padding-bottom: 3rem;
+}
+.header-solid {
+  height: 3.5rem;
 }
 </style>
