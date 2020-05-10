@@ -35,6 +35,6 @@ export default {
   margin-top: 3rem;
 }
 .header-solid {
-  height: 3.5rem;
+  height: 4.2rem;
 }
 </style>

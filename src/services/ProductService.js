@@ -28,5 +28,8 @@ export default {
   },
   postLaptop(laptop) {
     return apiClient.post('/laptops', laptop)
+  },
+  getAccessories() {
+    return apiClient.get('/accessories')
   }
 }

@@ -21,7 +21,7 @@
 <script>
 import Hero from '@/components/Hero.vue'
 import Products from '@/components/Products.vue'
-import axios from 'axios'
+import ProductService from '@/services/ProductService.js'
 export default {
   components: {
     Hero,
@@ -33,7 +33,7 @@ export default {
     }
   },
   created() {
-    axios.get('http://localhost:3000/accessories').then(response => {
+    ProductService.getAccessories().then(response => {
       this.laptops = response.data
     })
   }
