@@ -6,15 +6,17 @@
           <h5>Shop</h5>
           <ul class="list-unstyled text-small">
             <li>
-              <router-link class="text-muted" to="mobile-phones"
+              <router-link class="text-muted" to="/mobile-phones"
                 >Mobile Phones</router-link
               >
             </li>
             <li>
-              <router-link class="text-muted" to="laptops">Laptops</router-link>
+              <router-link class="text-muted" to="/laptops"
+                >Laptops</router-link
+              >
             </li>
             <li>
-              <router-link class="text-muted" to="accessories"
+              <router-link class="text-muted" to="/accessories"
                 >Accessories</router-link
               >
             </li>

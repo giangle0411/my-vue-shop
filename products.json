@@ -7,7 +7,13 @@
       "description": "Latest iPhone model, with 256GB storage capacity.",
       "price": 1999,
       "inStock": 50,
-      "imageName": "1.jpg"
+      "imageName": "1.jpg",
+      "SKU": 4182868,
+      "features": [
+        "6.5-inch Super Retina XDR OLED display",
+        "Water and dust resistance (4 metres for up to 30 minutes, IP68)",
+        "Triple-camera system with 12-megapixel Ultra Wide, Wide and Telephoto cameras"
+      ]
     },
     {
       "id": 2,
