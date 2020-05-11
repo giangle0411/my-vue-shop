@@ -5,6 +5,7 @@ import Phones from '../views/Phones.vue'
 import Laptops from '../views/Laptops.vue'
 import Accessories from '../views/Accessories.vue'
 import Sale from '../views/Sale.vue'
+import ProductDetails from '../views/ProductDetails.vue'
 
 Vue.use(VueRouter)
 
@@ -42,6 +43,12 @@ const routes = [
     path: '/sale',
     name: 'Sale',
     component: Sale
+  },
+  {
+    path: '/:category/:id',
+    name: 'product-details',
+    component: ProductDetails,
+    props: true
   }
 ]
 

@@ -2,6 +2,7 @@
   "phones": [
     {
       "id": 1,
+      "category": "phones",
       "name": "Apple iPhone 11 Pro 256GB",
       "description": "Latest iPhone model, with 256GB storage capacity.",
       "price": 1999,
@@ -10,6 +11,7 @@
     },
     {
       "id": 2,
+      "category": "phones",
       "name": "Apple iPhone 11 Pro Max 256GB",
       "description": "Latest iPhone model, but with bigger screen, 256GB storage capacity.",
       "price": 2149,
@@ -18,6 +20,7 @@
     },
     {
       "id": 3,
+      "category": "phones",
       "name": "Apple iPhone SE 128GB",
       "description": "Not only small, but powerful, and affordable!",
       "price": 829,
@@ -26,6 +29,7 @@
     },
     {
       "id": 4,
+      "category": "phones",
       "name": "Samsung Galaxy S20+ 5G 128GB",
       "description": "2020's Samsung Galaxy S20+ with incredible camera.",
       "price": 1649,
@@ -34,6 +38,7 @@
     },
     {
       "id": 5,
+      "category": "phones",
       "name": "Samsung Galaxy Note10+ 256GB",
       "description": "The Galaxy Note10+ comes with s-pen, which is fun to play with.",
       "price": 1699,
@@ -42,6 +47,7 @@
     },
     {
       "id": 6,
+      "category": "phones",
       "name": "Google Pixel 4 XL 128GB",
       "description": "A Google phone! Interesting.",
       "price": 1149,
@@ -52,6 +58,7 @@
   "laptops": [
     {
       "id": 10,
+      "category": "laptops",
       "name": "Apple MacBook Pro 16-inch 512GB (Silver)",
       "description": "Powerful and not for everyone. Gamers are restricted :).",
       "price": 3799,
@@ -60,6 +67,7 @@
     },
     {
       "id": 11,
+      "category": "laptops",
       "name": "Dell Inspiron 14 5000 14-inch",
       "description": "2-in-1 Touchscreen Laptop (10th Gen i5), TWO IN ONE? NICE!",
       "price": 1399,
@@ -68,6 +76,7 @@
     },
     {
       "id": 12,
+      "category": "laptops",
       "name": "Microsoft Surface Book 2 13.5-inch",
       "description": "256GB SSD and 8th Gen i7, it's just outstanding.",
       "price": 2398,
@@ -78,6 +87,7 @@
   "Accessories": [
     {
       "id": 30,
+      "category": "accessories",
       "name": "Samsung T5 500GB External SSD",
       "description": "Portable SSD with USB Type-C connector.",
       "price": 179,
@@ -86,6 +96,7 @@
     },
     {
       "id": 31,
+      "category": "accessories",
       "name": "Sony WF-1000XM3 Noise Cancelling Earphones",
       "description": "True true wireless Bluetooth headphones.",
       "price": 349,
@@ -94,6 +105,7 @@
     },
     {
       "id": 32,
+      "category": "accessories",
       "name": "Apple AirPods Pro",
       "description": "Compatible to every device, ESPECIALLY APPLES.",
       "price": 399,
@@ -102,6 +114,7 @@
     },
     {
       "id": 33,
+      "category": "accessories",
       "name": "Belkin Wireless Charging Dock",
       "description": "Say goodbye to tangling phone chargers!",
       "price": 79,

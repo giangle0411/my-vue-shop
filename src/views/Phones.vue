@@ -17,7 +17,8 @@
         :key="product.id"
         :product="product"
         class="col-md-4 d-flex align-items-stretch"
-      />
+      >
+      </Products>
     </div>
   </div>
 </template>
@@ -34,6 +35,12 @@ export default {
   data() {
     return {
       phones: []
+    }
+  },
+  method: {
+    displaydetails(id) {
+      this.$router.push({ name: 'product-details', params: { id: id } })
+      console.log('helo')
     }
   },
   created() {

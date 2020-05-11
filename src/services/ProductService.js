@@ -31,5 +31,8 @@ export default {
   },
   getAccessories() {
     return apiClient.get('/accessories')
+  },
+  getProduct(category, id) {
+    return apiClient.get('/' + category + '/' + id)
   }
 }
