@@ -27,6 +27,7 @@
 import Hero from '@/components/Hero.vue'
 import Products from '@/components/Products.vue'
 import ProductService from '@/services/ProductService.js'
+
 export default {
   components: {
     Hero,

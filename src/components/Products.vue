@@ -25,16 +25,25 @@
 
       <template v-slot:footer>
         <h4>Price: ${{ product.price }}</h4>
-        <a href="/accessories" class="btn btn-primary">Add to Cart</a>
+        <AddToCart
+          :name="product.name"
+          :id="product.id"
+          :price="product.price"
+        />
       </template>
     </b-card>
   </div>
 </template>
 
 <script>
+import AddToCart from './AddToCart.vue'
+
 export default {
   props: {
     product: Object
+  },
+  components: {
+    AddToCart
   }
 }
 </script>

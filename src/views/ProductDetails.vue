@@ -2,11 +2,7 @@
   <div class="container">
     <div class="row h-100 justify-content-center align-items-center">
       <div class="product-img col-md-6 ">
-        <img
-          :src="require(`../../public/img/products/${product.imageName}`)"
-          class="card-img-top"
-          alt="..."
-        />
+        <img :src="productImage" class="card-img-top" alt="..." />
       </div>
       <div class="product-info col-md-6 ">
         <div class="product-title">
@@ -66,7 +62,7 @@ export default {
 
       const fileName = this.product.imageName
 
-      return require(`../../public/img/products/${fileName}`) // the module request
+      return require('../../public/img/products/' + fileName) // the module request
     }
   },
   created() {
