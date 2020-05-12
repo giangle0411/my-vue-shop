@@ -1,14 +1,14 @@
 <template>
   <div class="container">
-    <div class="row">
-      <div class="product-img col-md-6">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="product-img col-md-6 ">
         <img
           :src="require(`../../public/img/products/${product.imageName}`)"
           class="card-img-top"
           alt="..."
         />
       </div>
-      <div class="product-info col-md-6">
+      <div class="product-info col-md-6 ">
         <div class="product-title">
           <h3>
             {{ product.name }}
@@ -39,51 +39,12 @@
         </div>
       </div>
     </div>
-    <div class="card text-center">
-      <div class="card-header">
-        <ul class="nav nav-tabs card-header-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" href="#ft" data-toggle="tab">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#sp" data-toggle="tab">Specifications</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#rv"
-              tabindex="-1"
-              aria-disabled="true"
-              data-toggle="tab"
-              >Reviews</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="card-body">
-        <div class="tab-content">
-          <div class="tab-pane" id="ft">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">
-              It's a broader card with text below as a natural lead-in to extra
-              content. This content is a little longer.
-            </p>
-          </div>
-          <div class="tab-pane" id="sp">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">
-              It's a broader card with text below.
-            </p>
-          </div>
-          <div class="tab-pane" id="rv">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">
-              It's a broader card with text below as a natural lead-in to extra
-              content.
-            </p>
-          </div>
-        </div>
-      </div>
+    <div class="card text-center" style="margin-top: 2rem">
+      <b-tabs content-class="mt-3">
+        <b-tab title="Features" active><p>Features</p></b-tab>
+        <b-tab title="Specs"><p>Specifications</p></b-tab>
+        <b-tab title="Reviews"><p>No review available.</p></b-tab>
+      </b-tabs>
     </div>
   </div>
 </template>
@@ -95,6 +56,17 @@ export default {
   data() {
     return {
       product: {}
+    }
+  },
+  computed: {
+    productImage() {
+      if (!this.product.imageName) {
+        return
+      }
+
+      const fileName = this.product.imageName
+
+      return require(`../../public/img/products/${fileName}`) // the module request
     }
   },
   created() {
@@ -114,10 +86,12 @@ export default {
   margin-top: 3px;
 }
 .product-info {
-  margin-top: 2rem;
+  display: inline-block;
+  width: 100%;
 }
 .product-img {
   padding: 2rem;
+  width: 100%;
 }
 .product-title h3 {
   font-weight: 700;

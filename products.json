@@ -10,7 +10,7 @@
       "imageName": "1.jpg",
       "SKU": 4182868,
       "features": [
-        "6.5-inch Super Retina XDR OLED display",
+        "5.8-inch Super Retina XDR OLED display",
         "Water and dust resistance (4 metres for up to 30 minutes, IP68)",
         "Triple-camera system with 12-megapixel Ultra Wide, Wide and Telephoto cameras"
       ]
@@ -22,7 +22,13 @@
       "description": "Latest iPhone model, but with bigger screen, 256GB storage capacity.",
       "price": 2149,
       "inStock": 50,
-      "imageName": "1.jpg"
+      "imageName": "1.jpg",
+      "SKU": 4182226,
+      "features": [
+        "6.5-inch Super Retina XDR OLED display",
+        "Water and dust resistance (4 metres for up to 30 minutes, IP68)",
+        "Triple-camera system with 12-megapixel Ultra Wide, Wide and Telephoto cameras"
+      ]
     },
     {
       "id": 3,
@@ -31,7 +37,13 @@
       "description": "Not only small, but powerful, and affordable!",
       "price": 829,
       "inStock": 100,
-      "imageName": "3.jpeg"
+      "imageName": "3.jpeg",
+      "SKU": 4182890,
+      "features": [
+        "4.7-inch Retina HD display",
+        "A13 Bionic chip with third-generation Neural Engine",
+        "12-megapixel Wide camera and 4K video"
+      ]
     },
     {
       "id": 4,
@@ -40,7 +52,13 @@
       "description": "2020's Samsung Galaxy S20+ with incredible camera.",
       "price": 1649,
       "inStock": 50,
-      "imageName": "4.jpg"
+      "imageName": "4.jpg",
+      "SKU": 2682170,
+      "features": [
+        "Quad rear camera with 30x Space Zoom & 8K video",
+        "6.7-inch Dynamic AMOLED Infinity-O display with 120Hz refresh rate",
+        "Shoot night shots like a pro with twice the light*"
+      ]
     },
     {
       "id": 5,
@@ -55,10 +73,16 @@
       "id": 6,
       "category": "phones",
       "name": "Google Pixel 4 XL 128GB",
-      "description": "A Google phone! Interesting.",
+      "description": "It’s built around the helpful Google software you know and love, which is always getting better.",
       "price": 1149,
       "inStock": 40,
-      "imageName": "6.jpg"
+      "imageName": "6.jpg",
+      "SKU": 4182890,
+      "features": [
+        "Capture incredible colour in all your photos - even photos that you take using your favourite apps",
+        "Adjust the exposure balance of your photos before you take the shots",
+        "Get more done with your voice using the Google Assistant"
+      ]
     }
   ],
   "laptops": [
