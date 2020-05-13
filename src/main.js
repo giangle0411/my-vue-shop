@@ -15,6 +15,9 @@ global.jQuery = jQuery
 import 'bootstrap/dist/css/bootstrap.css'
 import './assets/app.scss'
 
+import Vuex from 'vuex'
+Vue.use(Vuex)
+
 Vue.config.productionTip = false
 const requireComponent = require.context(
   './components',

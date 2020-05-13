@@ -1,8 +1,8 @@
 {
-  "phones": [
+  "mobile-phones": [
     {
       "id": 1,
-      "category": "phones",
+      "category": "mobile-phones",
       "name": "Apple iPhone 11 Pro 256GB",
       "description": "Latest iPhone model, with 256GB storage capacity.",
       "price": 1999,
@@ -17,7 +17,7 @@
     },
     {
       "id": 2,
-      "category": "phones",
+      "category": "mobile-phones",
       "name": "Apple iPhone 11 Pro Max 256GB",
       "description": "Latest iPhone model, but with bigger screen, 256GB storage capacity.",
       "price": 2149,
@@ -32,7 +32,7 @@
     },
     {
       "id": 3,
-      "category": "phones",
+      "category": "mobile-phones",
       "name": "Apple iPhone SE 128GB",
       "description": "Not only small, but powerful, and affordable!",
       "price": 829,
@@ -47,7 +47,7 @@
     },
     {
       "id": 4,
-      "category": "phones",
+      "category": "mobile-phones",
       "name": "Samsung Galaxy S20+ 5G 128GB",
       "description": "2020's Samsung Galaxy S20+ with incredible camera.",
       "price": 1649,
@@ -62,7 +62,7 @@
     },
     {
       "id": 5,
-      "category": "phones",
+      "category": "mobile-phones",
       "name": "Samsung Galaxy Note10+ 256GB",
       "description": "The Galaxy Note10+ comes with s-pen, which is fun to play with.",
       "price": 1699,
@@ -71,7 +71,7 @@
     },
     {
       "id": 6,
-      "category": "phones",
+      "category": "mobile-phones",
       "name": "Google Pixel 4 XL 128GB",
       "description": "It’s built around the helpful Google software you know and love, which is always getting better.",
       "price": 1149,
@@ -93,7 +93,13 @@
       "description": "Powerful and not for everyone. Gamers are restricted :).",
       "price": 3799,
       "inStock": 20,
-      "imageName": "10.jpg"
+      "imageName": "10.jpg",
+      "SKU": 9023562,
+      "features": [
+        "Ninth-generation 6-core Intel Core i7 processor",
+        "Stunning 16-inch Retina display with True Tone technology",
+        "Touch Bar and Touch ID"
+      ]
     },
     {
       "id": 11,
@@ -102,7 +108,13 @@
       "description": "2-in-1 Touchscreen Laptop (10th Gen i5), TWO IN ONE? NICE!",
       "price": 1399,
       "inStock": 20,
-      "imageName": "11.jpg"
+      "imageName": "11.jpg",
+      "SKU": 4221134,
+      "features": [
+        "14.0-inch FHD (1920 x 1080) IPS LED-Backlit Touch Display",
+        "10th Generation Intel® Core™ i5-10210U Processor",
+        "512GB SSD Storage"
+      ]
     },
     {
       "id": 12,
@@ -111,7 +123,13 @@
       "description": "256GB SSD and 8th Gen i7, it's just outstanding.",
       "price": 2398,
       "inStock": 40,
-      "imageName": "12.jpg"
+      "imageName": "12.jpg",
+      "SKU": 4324689,
+      "features": [
+        "The fastest Surface Book yet, with 2x more power",
+        "Up to 17 hours of battery life[1]",
+        "13.5-inch Vibrant PixelSense™ Display"
+      ]
     }
   ],
   "Accessories": [
@@ -120,18 +138,30 @@
       "category": "accessories",
       "name": "Samsung T5 500GB External SSD",
       "description": "Portable SSD with USB Type-C connector.",
-      "price": 179,
+      "price": 169,
       "inStock": 50,
-      "imageName": "30.jpg"
+      "imageName": "30.jpg",
+      "SKU": 1194382,
+      "features": [
+        "Fast transfer speeds of up to 540MB/s",
+        "Compact, lightweight (51g) and shock-resistant from falls up to 2m",
+        "Optional password protection with AES 256-bit hardware encryption"
+      ]
     },
     {
       "id": 31,
       "category": "accessories",
       "name": "Sony WF-1000XM3 Noise Cancelling Earphones",
       "description": "True true wireless Bluetooth headphones.",
-      "price": 349,
+      "price": 299,
       "inStock": 30,
-      "imageName": "31.jpg"
+      "imageName": "31.jpg",
+      "SKU": 3209483,
+      "features": [
+        "Industry-leading noise cancellation",
+        "Up to 24 hours of listening",
+        "Headphones that react to you"
+      ]
     },
     {
       "id": 32,
@@ -140,7 +170,13 @@
       "description": "Compatible to every device, ESPECIALLY APPLES.",
       "price": 399,
       "inStock": 50,
-      "imageName": "32.jpeg"
+      "imageName": "32.jpeg",
+      "SKU": 3218122,
+      "features": [
+        "Active Noise Cancellation for immersive sound",
+        "Transparency mode for hearing and connecting with the world around you",
+        "Three sizes of soft, tapered silicone tips for a customisable fit"
+      ]
     },
     {
       "id": 33,
@@ -149,7 +185,13 @@
       "description": "Say goodbye to tangling phone chargers!",
       "price": 79,
       "inStock": 100,
-      "imageName": "33.jpeg"
+      "imageName": "33.jpeg",
+      "SKU": 6748392,
+      "features": [
+        "Faster wireless charging for more devices",
+        "Qi-certified for full functionality with all Qi-enabled devices up to 10W",
+        "Uniquely designed stand supports landscape and portrait mode"
+      ]
     }
   ]
 }

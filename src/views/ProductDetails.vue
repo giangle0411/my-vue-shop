@@ -4,7 +4,7 @@
       <div class="product-img col-md-6 ">
         <img :src="productImage" class="card-img-top" alt="..." />
       </div>
-      <div class="product-info col-md-6 ">
+      <div class="product-info col-md-6">
         <div class="product-title">
           <h3>
             {{ product.name }}
@@ -28,7 +28,11 @@
                 <h2>${{ product.price }}</h2>
               </div>
               <div class="col-md-6">
-                <a href="/accessories" class="btn btn-primary">Add to Cart</a>
+                <AddToCart
+                  :name="product.name"
+                  :id="product.id"
+                  :price="product.price"
+                />
               </div>
             </div>
           </div>
@@ -42,13 +46,23 @@
         <b-tab title="Reviews"><p>No review available.</p></b-tab>
       </b-tabs>
     </div>
+    <CartModal />
   </div>
 </template>
 
 <script>
+import AddToCart from '@/components/AddToCart.vue'
+import CartModal from '@/components/CartModal.vue'
 import ProductService from '@/services/ProductService.js'
 export default {
-  props: ['category', 'id'],
+  props: {
+    category: String,
+    id: String
+  },
+  components: {
+    AddToCart,
+    CartModal
+  },
   data() {
     return {
       product: {}
@@ -82,7 +96,7 @@ export default {
   margin-top: 3px;
 }
 .product-info {
-  display: inline-block;
+  display: block;
   width: 100%;
 }
 .product-img {
@@ -92,6 +106,7 @@ export default {
 .product-title h3 {
   font-weight: 700;
 }
+
 .product-desc small {
   color: #757575;
 }

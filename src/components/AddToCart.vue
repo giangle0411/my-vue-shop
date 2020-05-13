@@ -1,6 +1,8 @@
 <template>
   <div>
-    <button class="btn btn-primary">Add to Cart</button>
+    <button class="btn btn-primary" @click="addToCart">
+      Add to Cart
+    </button>
   </div>
 </template>
 
@@ -11,11 +13,19 @@ export default {
     price: Number,
     id: Number
   },
-  data() {
-    return {
-      productName: this.name,
-      productPrice: this.price,
-      productID: this.id
+  computed: {
+    item() {
+      return {
+        productName: this.name,
+        productPrice: this.price,
+        productID: this.id
+      }
+    }
+  },
+  methods: {
+    addToCart() {
+      this.$store.commit('addToCart', this.item)
+      this.$bvModal.show('bv-modal-example')
     }
   }
 }

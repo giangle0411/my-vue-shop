@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import * as phone from '@/store/modules/phone.js'
+import * as cart from '@/store/modules/cart.js'
 
 Vue.use(Vuex)
 
@@ -9,6 +9,6 @@ export default new Vuex.Store({
   mutations: {},
   actions: {},
   modules: {
-    phone
+    cart
   }
 })

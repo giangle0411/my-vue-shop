@@ -12,10 +12,10 @@ const apiClient = axios.create({
 
 export default {
   getPhones() {
-    return apiClient.get('/phones')
+    return apiClient.get('/mobile-phones')
   },
   getPhone(id) {
-    return apiClient.get('/phones/' + id)
+    return apiClient.get('/mobile-phones/' + id)
   },
   postPhone(phone) {
     return apiClient.post('/phones', phone)

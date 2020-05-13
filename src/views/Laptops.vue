@@ -18,6 +18,7 @@
         class="col-md-4 d-flex align-items-stretch"
       />
     </div>
+    <CartModal />
   </div>
 </template>
 
@@ -25,10 +26,13 @@
 import Hero from '@/components/Hero.vue'
 import Products from '@/components/Products.vue'
 import ProductService from '@/services/ProductService.js'
+import CartModal from '@/components/CartModal.vue'
+
 export default {
   components: {
     Hero,
-    Products
+    Products,
+    CartModal
   },
   data() {
     return {
