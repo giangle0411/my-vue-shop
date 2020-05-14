@@ -11,14 +11,16 @@ export default {
   props: {
     name: String,
     price: Number,
-    id: Number
+    id: Number,
+    image: String
   },
   computed: {
     item() {
       return {
         productName: this.name,
         productPrice: this.price,
-        productID: this.id
+        productID: this.id,
+        productImage: this.image
       }
     }
   },

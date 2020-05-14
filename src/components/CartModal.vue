@@ -6,10 +6,19 @@
       </template>
       <div class="d-block text-center">
         <ul>
-          <!-- <li v-for="(item, index) in this.$store.state.cart" :key="index">
-            {{ item.productID }}
-          </li> -->
-          Hello
+          <li v-for="(item, index) in $store.state.cart.cart" :key="index">
+            <img
+              :src="item.productImage"
+              alt="..."
+              width="80px"
+              class="align-self-left mr-3"
+            />
+            <div class="media-body">
+              <h5 class="mt-0">{{ item.productName }}</h5>
+              <p class="mt-0">${{ item.productPrice }}</p>
+            </div>
+          </li>
+          <!-- <p>{{ $store.state.cart }}</p> -->
         </ul>
       </div>
       <b-button class="mt-3" block @click="$bvModal.hide('bv-modal-example')"

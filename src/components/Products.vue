@@ -11,11 +11,8 @@
         <header class="header-solid">
           <h5 class="card-title">{{ product.name }}</h5>
         </header>
-        <img
-          :src="require(`../../public/img/products/${product.imageName}`)"
-          class="card-img-top"
-          alt="..."
-        />
+        <img :src="productImage" class="card-img-top" alt="..." />
+
         <div class="card-body">
           <p class="card-text">
             {{ product.description }}
@@ -26,6 +23,7 @@
       <template v-slot:footer>
         <h4>Price: ${{ product.price }}</h4>
         <AddToCart
+          :image="productImage"
           :name="product.name"
           :id="product.id"
           :price="product.price"
@@ -44,6 +42,15 @@ export default {
   },
   components: {
     AddToCart
+  },
+  computed: {
+    productImage() {
+      if (!this.product.imageName) {
+        return
+      }
+      const fileName = this.product.imageName
+      return require('../../public/img/products/' + fileName) // the module request
+    }
   }
 }
 </script>

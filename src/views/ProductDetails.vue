@@ -29,6 +29,7 @@
               </div>
               <div class="col-md-6">
                 <AddToCart
+                  :image="productImage"
                   :name="product.name"
                   :id="product.id"
                   :price="product.price"
@@ -73,9 +74,7 @@ export default {
       if (!this.product.imageName) {
         return
       }
-
       const fileName = this.product.imageName
-
       return require('../../public/img/products/' + fileName) // the module request
     }
   },
