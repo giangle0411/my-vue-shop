@@ -3,17 +3,17 @@ import ProductService from '@/services/ProductService.js'
 export const namespaced = true
 
 export const state = {
-  accessories: [],
-  accessory: {}
+  accessories: []
+  // accessory: {}
 }
 
 export const mutations = {
   SET_ACCESSORIES(state, accessories) {
     state.accessories = accessories
-  },
-  SET_ACCESSORY(state, accessory) {
-    state.accessory = accessory
   }
+  // SET_ACCESSORY(state, accessory) {
+  //   state.accessory = accessory
+  // }
 }
 
 export const actions = {

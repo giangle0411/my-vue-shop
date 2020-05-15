@@ -67,7 +67,13 @@
       "description": "The Galaxy Note10+ comes with s-pen, which is fun to play with.",
       "price": 1699,
       "inStock": 25,
-      "imageName": "5.jpg"
+      "imageName": "5.jpg",
+      "SKU": 2689338,
+      "features": [
+        "4,300mAh battery and 45W super-fast charging 2.0",
+        "Dual SIM (Hybrid)",
+        "Quad rear camera with 3D Depth Camera"
+      ]
     },
     {
       "id": 6,

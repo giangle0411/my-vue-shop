@@ -6,6 +6,7 @@ import Laptops from '../views/Laptops.vue'
 import Accessories from '../views/Accessories.vue'
 import Sale from '../views/Sale.vue'
 import ProductDetails from '../views/ProductDetails.vue'
+import Checkout from '../views/Checkout.vue'
 
 Vue.use(VueRouter)
 
@@ -43,6 +44,11 @@ const routes = [
     path: '/sale',
     name: 'Sale',
     component: Sale
+  },
+  {
+    path: '/checkout',
+    name: 'Checkout',
+    component: Checkout
   },
   {
     path: '/:category/:id',
