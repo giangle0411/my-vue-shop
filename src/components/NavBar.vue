@@ -7,12 +7,12 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="/mobile-phones">Mobile Phones</b-nav-item>
-          <b-nav-item href="/laptops">Laptops</b-nav-item>
-          <b-nav-item href="/accessories">Accessories</b-nav-item>
+          <b-nav-item to="/mobile-phones">Mobile Phones</b-nav-item>
+          <b-nav-item to="/laptops">Laptops</b-nav-item>
+          <b-nav-item to="/accessories">Accessories</b-nav-item>
 
-          <b-nav-item href="/about">About Us</b-nav-item>
-          <b-nav-item href="/sale" disabled>Sales</b-nav-item>
+          <b-nav-item to="/about">About Us</b-nav-item>
+          <b-nav-item to="/sale" disabled>Sales</b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
@@ -22,8 +22,8 @@
             <template v-slot:button-content>
               <em>User</em>
             </template>
-            <b-dropdown-item href="#">Profile</b-dropdown-item>
-            <b-dropdown-item href="#">Sign Out</b-dropdown-item>
+            <b-dropdown-item to="/">Profile</b-dropdown-item>
+            <b-dropdown-item to="/">Sign Out</b-dropdown-item>
           </b-nav-item-dropdown>
           <b-nav-form>
             <b-form-input

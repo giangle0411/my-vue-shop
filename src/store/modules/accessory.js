@@ -3,24 +3,24 @@ import ProductService from '@/services/ProductService.js'
 export const namespaced = true
 
 export const state = {
-  laptops: [],
-  laptop: {}
+  accessories: [],
+  accessory: {}
 }
 
 export const mutations = {
-  SET_LAPTOPS(state, laptops) {
-    state.laptops = laptops
+  SET_ACCESSORIES(state, accessories) {
+    state.accessories = accessories
   },
-  SET_LAPTOP(state, laptop) {
-    state.laptop = laptop
+  SET_ACCESSORY(state, accessory) {
+    state.accessory = accessory
   }
 }
 
 export const actions = {
-  fetchLaptops({ commit }) {
-    return ProductService.getLaptops()
+  fetchAccessories({ commit }) {
+    return ProductService.getAccessories()
       .then(response => {
-        commit('SET_LAPTOPS', response.data)
+        commit('SET_ACCESSORIES', response.data)
       })
       .catch(error => {
         console.log('There was an error' + error.response)

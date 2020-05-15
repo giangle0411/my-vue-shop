@@ -12,7 +12,7 @@
     />
     <div class="row">
       <Products
-        v-for="product in laptops"
+        v-for="product in laptop.laptops"
         :key="product.id"
         :product="product"
         class="col-md-4 d-flex align-items-stretch"
@@ -25,7 +25,7 @@
 <script>
 import Hero from '@/components/Hero.vue'
 import Products from '@/components/Products.vue'
-import ProductService from '@/services/ProductService.js'
+import { mapState } from 'vuex'
 import CartModal from '@/components/CartModal.vue'
 
 export default {
@@ -34,15 +34,11 @@ export default {
     Products,
     CartModal
   },
-  data() {
-    return {
-      laptops: []
-    }
-  },
   created() {
-    ProductService.getLaptops().then(response => {
-      this.laptops = response.data
-    })
+    this.$store.dispatch('laptop/fetchLaptops')
+  },
+  computed: {
+    ...mapState(['laptop'])
   }
 }
 </script>

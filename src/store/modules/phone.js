@@ -11,14 +11,13 @@ export const mutations = {
   SET_PHONES(state, phones) {
     state.phones = phones
   },
-
   SET_PHONE(state, phone) {
     state.phone = phone
   }
 }
 
 export const actions = {
-  fetchEvents({ commit }) {
+  fetchPhones({ commit }) {
     return ProductService.getPhones()
       .then(response => {
         commit('SET_PHONES', response.data)

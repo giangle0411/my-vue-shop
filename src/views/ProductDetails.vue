@@ -58,7 +58,7 @@ import ProductService from '@/services/ProductService.js'
 export default {
   props: {
     category: String,
-    id: String
+    id: Number
   },
   components: {
     AddToCart,
