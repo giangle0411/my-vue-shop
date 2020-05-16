@@ -17,7 +17,9 @@
                 </div>
                 <div class="card-block px-2">
                   <h5 class="mt-0">{{ item.productName }}</h5>
-                  <p class="mt-0">${{ item.productPrice }}</p>
+                  <p class="mt-0">
+                    {{ (item.productPrice * item.productQuantity) | currency }}
+                  </p>
                   <p class="mt-0">Quantity: {{ item.productQuantity }}</p>
                 </div>
               </div>
@@ -25,7 +27,7 @@
           </ul>
         </div>
         <div class="col-md-3">
-          <h3>Total price: ${{ totalAmount }}</h3>
+          <h3>Total price: {{ totalAmount | currency }}</h3>
         </div>
       </div>
     </div>

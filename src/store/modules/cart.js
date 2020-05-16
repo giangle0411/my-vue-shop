@@ -1,5 +1,7 @@
+let cart = window.localStorage.getItem('cart')
+
 export const state = {
-  cart: [],
+  cart: cart ? JSON.parse(cart) : [],
   totalPrice: Number
 }
 
@@ -11,5 +13,9 @@ export const mutations = {
     } else {
       state.cart.push(item)
     }
+    this.commit('saveData')
+  },
+  saveData(state) {
+    window.localStorage.setItem('cart', JSON.stringify(state.cart))
   }
 }

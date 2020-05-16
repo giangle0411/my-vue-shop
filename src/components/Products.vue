@@ -21,7 +21,7 @@
       </router-link>
 
       <template v-slot:footer>
-        <h4>Price: ${{ product.price }}</h4>
+        <h4>Price: {{ product.price | currency }}</h4>
         <AddToCart
           :image="productImage"
           :name="product.name"

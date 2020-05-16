@@ -17,15 +17,15 @@
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-nav-item-dropdown right>
-            <!-- Using 'button-content' slot -->
-            <template v-slot:button-content>
+          <!-- <b-nav-item-dropdown right> -->
+          <!-- Using 'button-content' slot -->
+          <!-- <template v-slot:button-content>
               <em>User</em>
             </template>
             <b-dropdown-item to="/">Profile</b-dropdown-item>
             <b-dropdown-item to="/">Sign Out</b-dropdown-item>
-          </b-nav-item-dropdown>
-          <b-nav-form>
+          </b-nav-item-dropdown> -->
+          <!-- <b-nav-form>
             <b-form-input
               size="sm"
               class="mr-sm-2"
@@ -34,7 +34,14 @@
             <b-button size="sm" class="my-2 my-sm-0" type="submit"
               >Search</b-button
             >
-          </b-nav-form>
+          </b-nav-form> -->
+          <b-button
+            size="sm"
+            class="my-2 my-sm-0"
+            variant="secondary"
+            @click="showCart"
+            >Cart</b-button
+          >
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -42,7 +49,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    showCart() {
+      return this.$bvModal.show('bv-modal-example')
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped></style>

@@ -4,10 +4,12 @@ import router from './router'
 import store from './store'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
+import Vue2Filters from 'vue2-filters'
 
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
+Vue.use(Vue2Filters)
 
 import jQuery from 'jquery'
 global.jQuery = jQuery
