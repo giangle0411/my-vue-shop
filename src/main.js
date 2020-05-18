@@ -5,17 +5,18 @@ import store from './store'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
 import Vue2Filters from 'vue2-filters'
-
+import Vuelidate from 'vuelidate'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import './assets/app.scss'
+
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(Vue2Filters)
+Vue.use(Vuelidate)
 
 import jQuery from 'jquery'
 global.jQuery = jQuery
-
-import 'bootstrap/dist/css/bootstrap.css'
-import './assets/app.scss'
 
 import Vuex from 'vuex'
 Vue.use(Vuex)

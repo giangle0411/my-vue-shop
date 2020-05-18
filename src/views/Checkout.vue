@@ -1,8 +1,11 @@
 <template>
   <div class="checkout">
-    <div class="container mt-5 pt-5">
+    <div class="container mt-5 pt-2">
       <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-6 mb-5">
+          <CheckoutForm />
+        </div>
+        <div class="col-md-6">
           <h3>Checkout!</h3>
           <ul style="list-style: none">
             <li v-for="(item, index) in $store.state.cart.cart" :key="index">
@@ -41,9 +44,9 @@
               </div>
             </li>
           </ul>
-        </div>
-        <div class="col-md-3">
-          <h4>Total price: {{ totalAmount | currency }}</h4>
+          <div class="card" style="padding-top: 8px">
+            <h5>Total price: {{ totalAmount | currency }}</h5>
+          </div>
         </div>
       </div>
     </div>
@@ -51,7 +54,11 @@
 </template>
 
 <script>
+import CheckoutForm from '@/components/CheckoutForm.vue'
 export default {
+  components: {
+    CheckoutForm
+  },
   computed: {
     totalAmount() {
       var sum = 0
