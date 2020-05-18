@@ -20,14 +20,30 @@
                   <p class="mt-0">
                     {{ (item.productPrice * item.productQuantity) | currency }}
                   </p>
-                  <p class="mt-0">Quantity: {{ item.productQuantity }}</p>
+                  <div class="price-rm">
+                    <label class="mt-0">Quantity: </label>
+                    <button @click="$store.commit('decreaseQuantity', item)">
+                      -
+                    </button>
+                    {{ item.productQuantity }}
+                    <button @click="$store.commit('increaseQuantity', item)">
+                      +
+                    </button>
+
+                    <button
+                      class="rm-button ml-4"
+                      @click="$store.commit('removeFromCart', item)"
+                    >
+                      Remove
+                    </button>
+                  </div>
                 </div>
               </div>
             </li>
           </ul>
         </div>
         <div class="col-md-3">
-          <h3>Total price: {{ totalAmount | currency }}</h3>
+          <h4>Total price: {{ totalAmount | currency }}</h4>
         </div>
       </div>
     </div>
@@ -67,5 +83,12 @@ li {
 .card-block {
   text-align: left;
   margin-top: 1rem;
+}
+.rm-button:hover {
+  color: #a3a3a3;
+}
+.price-rm {
+  display: inline-block;
+  font-size: 90%;
 }
 </style>

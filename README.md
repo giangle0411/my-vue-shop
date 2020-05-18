@@ -4,6 +4,10 @@
 ```
 npm install
 ```
+### Run the mock-up database
+```
+json-server --watch products.json
+```
 
 ### Compiles and hot-reloads for development
 ```

@@ -21,7 +21,7 @@ export default {
         productPrice: this.price,
         productID: this.id,
         productImage: this.image,
-        productQuantity: 1
+        productQuantity: 0
       }
     }
   },
