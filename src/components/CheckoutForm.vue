@@ -321,7 +321,8 @@ export default {
         address2: null,
         country: null,
         state: null,
-        postcode: null
+        postcode: null,
+        cart: this.$store.state.cart.cart
       }
     },
 
@@ -337,13 +338,15 @@ export default {
     onSubmit() {
       this.$v.$touch()
       if (!this.$v.$invalid) {
-        this.$store.dispatch('order/createOrder', this.order).then(() => {
-          this.$router.push({
-            name: 'Phones'
-          })
+        this.$store
+          .dispatch('order/createOrder', this.order, this.cart)
+          .then(() => {
+            this.$router.push({
+              name: 'Phones'
+            })
 
-          this.order = this.createFreshOrderObject()
-        })
+            this.order = this.createFreshOrderObject()
+          })
       }
     }
   }
