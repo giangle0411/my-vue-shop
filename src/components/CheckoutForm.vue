@@ -337,9 +337,13 @@ export default {
     onSubmit() {
       this.$v.$touch()
       if (!this.$v.$invalid) {
-        console.log(this.order)
+        this.$store.dispatch('order/createOrder', this.order).then(() => {
+          this.$router.push({
+            name: 'Phones'
+          })
 
-        this.order = this.createFreshOrderObject()
+          this.order = this.createFreshOrderObject()
+        })
       }
     }
   }
