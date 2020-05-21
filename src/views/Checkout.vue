@@ -45,7 +45,7 @@
             </li>
           </ul>
           <div class="card" style="padding-top: 8px">
-            <h5>Total price: {{ totalAmount | currency }}</h5>
+            <h5>Total price: {{ $store.state.cart.totalPrice | currency }}</h5>
           </div>
         </div>
       </div>
@@ -55,18 +55,24 @@
 
 <script>
 import CheckoutForm from '@/components/CheckoutForm.vue'
+
 export default {
   components: {
     CheckoutForm
   },
   computed: {
     totalAmount() {
-      var sum = 0
-      this.$store.state.cart.cart.forEach(e => {
-        sum += e.productPrice * e.productQuantity
-      })
-      return sum
+      // var sum = 0
+      // this.$store.state.cart.cart.forEach(e => {
+      //   sum += e.productPrice * e.productQuantity
+      // })
+      // return sum
+      return this.$store.getters.totalPay
     }
+  },
+
+  mounted() {
+    this.$store.commit('setTotalPrice')
   }
 }
 </script>

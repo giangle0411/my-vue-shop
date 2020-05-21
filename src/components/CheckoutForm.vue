@@ -322,7 +322,8 @@ export default {
         country: null,
         state: null,
         postcode: null,
-        cart: this.$store.state.cart.cart
+        cart: this.$store.state.cart.cart,
+        totalPrice: this.$store.state.cart.totalPrice
       }
     },
 
@@ -341,10 +342,11 @@ export default {
         this.$store
           .dispatch('order/createOrder', this.order, this.cart)
           .then(() => {
+            this.$store.commit('resetCart')
+            this.$store.commit('saveData')
             this.$router.push({
               name: 'Phones'
             })
-
             this.order = this.createFreshOrderObject()
           })
       }
