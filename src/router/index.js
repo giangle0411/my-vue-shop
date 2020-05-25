@@ -7,6 +7,8 @@ import Accessories from '../views/Accessories.vue'
 import Sale from '../views/Sale.vue'
 import ProductDetails from '../views/ProductDetails.vue'
 import Checkout from '../views/Checkout.vue'
+import NProgress from 'nprogress'
+import store from '../store'
 
 Vue.use(VueRouter)
 
@@ -28,17 +30,35 @@ const routes = [
   {
     path: '/mobile-phones',
     name: 'Phones',
-    component: Phones
+    component: Phones,
+    props: true,
+    beforeEnter(routeTo, routeFrom, next) {
+      store.dispatch('phone/fetchPhones').then(() => {
+        next()
+      })
+    }
   },
   {
     path: '/laptops',
     name: 'Laptops',
-    component: Laptops
+    component: Laptops,
+    props: true,
+    beforeEnter(routeTo, routeFrom, next) {
+      store.dispatch('laptop/fetchLaptops').then(() => {
+        next()
+      })
+    }
   },
   {
     path: '/accessories',
     name: 'Accessories',
-    component: Accessories
+    component: Accessories,
+    props: true,
+    beforeEnter(routeTo, routeFrom, next) {
+      store.dispatch('accessory/fetchAccessories').then(() => {
+        next()
+      })
+    }
   },
   {
     path: '/sale',
@@ -61,6 +81,15 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   routes
+})
+
+router.beforeEach((routeTo, routeFrom, next) => {
+  NProgress.start()
+  next()
+})
+
+router.afterEach(() => {
+  NProgress.done()
 })
 
 export default router

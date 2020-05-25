@@ -9,6 +9,7 @@ import Vuelidate from 'vuelidate'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import './assets/app.scss'
+import 'nprogress/nprogress.css'
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)

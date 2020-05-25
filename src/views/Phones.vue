@@ -37,9 +37,9 @@ export default {
     CartModal
   },
 
-  created() {
-    this.$store.dispatch('phone/fetchPhones')
-  },
+  // created() {
+  //   this.$store.dispatch('phone/fetchPhones')
+  // },
   computed: {
     ...mapState(['phone'])
   }

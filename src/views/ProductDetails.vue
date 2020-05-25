@@ -55,11 +55,21 @@
 import AddToCart from '@/components/AddToCart.vue'
 import CartModal from '@/components/CartModal.vue'
 import ProductService from '@/services/ProductService.js'
+// import NProgress from 'nprogress'
 export default {
   props: {
     category: String,
-    id: Number
+    id: String
   },
+
+  // beforeRouteEnter(routeTo, routeFrom, next) {
+  //   NProgress.start()
+  //   this.getProducts().then(() => {
+  //     NProgress.done()
+  //     next()
+  //   })
+  // },
+
   components: {
     AddToCart,
     CartModal
@@ -78,10 +88,17 @@ export default {
       return require('../../public/img/products/' + fileName) // the module request
     }
   },
+  methods: {
+    getProducts() {
+      return ProductService.getProduct(this.category, this.id).then(
+        response => {
+          this.product = response.data
+        }
+      )
+    }
+  },
   created() {
-    ProductService.getProduct(this.category, this.id).then(response => {
-      this.product = response.data
-    })
+    this.getProducts()
   }
 }
 </script>

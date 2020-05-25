@@ -36,9 +36,9 @@ export default {
       laptops: []
     }
   },
-  created() {
-    this.$store.dispatch('accessory/fetchAccessories')
-  },
+  // created() {
+  //   this.$store.dispatch('accessory/fetchAccessories')
+  // },
   computed: {
     ...mapState(['accessory'])
   }

@@ -34,9 +34,9 @@ export default {
     Products,
     CartModal
   },
-  created() {
-    this.$store.dispatch('laptop/fetchLaptops')
-  },
+  // created() {
+  //   this.$store.dispatch('laptop/fetchLaptops')
+  // },
   computed: {
     ...mapState(['laptop'])
   }
