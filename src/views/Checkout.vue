@@ -2,10 +2,10 @@
   <div class="checkout">
     <div class="container mt-5 pt-2">
       <div class="row">
-        <div class="col-md-6 mb-5">
+        <div class="col-lg-6 mb-5">
           <CheckoutForm />
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6">
           <h3>Checkout!</h3>
           <ul style="list-style: none">
             <li v-for="(item, index) in $store.state.cart.cart" :key="index">
