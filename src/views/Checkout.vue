@@ -71,7 +71,7 @@ export default {
     }
   },
 
-  mounted() {
+  beforeMount() {
     this.$store.commit('setTotalPrice')
   }
 }

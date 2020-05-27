@@ -7,6 +7,8 @@ import Accessories from '../views/Accessories.vue'
 import Sale from '../views/Sale.vue'
 import ProductDetails from '../views/ProductDetails.vue'
 import Checkout from '../views/Checkout.vue'
+import NotFound from '../views/NotFound.vue'
+import NetworkIssue from '../views/NetworkIssue.vue'
 import NProgress from 'nprogress'
 import store from '../store'
 
@@ -75,6 +77,21 @@ const routes = [
     name: 'product-details',
     component: ProductDetails,
     props: true
+  },
+  {
+    path: '/404',
+    name: '404',
+    component: NotFound,
+    props: true
+  },
+  {
+    path: '/network-issue',
+    name: 'network-issue',
+    component: NetworkIssue
+  },
+  {
+    path: '*',
+    redirect: { name: '404', params: { resource: 'page' } }
   }
 ]
 
